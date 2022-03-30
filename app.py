@@ -2,11 +2,15 @@
 import os
 
 import aws_cdk as cdk
+from first_vpc.first_vpc_stack import FirstvpcStack
 
-from first_vpc.first_vpc_stack import FirstVpcStack
+
 
 
 app = cdk.App()
+
+
+
 FirstVpcStack(app, "FirstVpcStack",
     # If you don't specify 'env', this stack will be environment-agnostic.
     # Account/Region-dependent features and context lookups will not work,
@@ -20,7 +24,7 @@ FirstVpcStack(app, "FirstVpcStack",
     # Uncomment the next line if you know exactly what Account and Region you
     # want to deploy the stack to. */
 
-    #env=cdk.Environment(account='123456789012', region='us-east-1'),
+    env=cdk.Environment(account='804075638102', region='us-east-1'),
 
     # For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html
     )
