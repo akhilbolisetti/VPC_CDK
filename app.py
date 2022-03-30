@@ -2,7 +2,7 @@
 import os
 
 import aws_cdk as cdk
-from first_vpc.first_vpc_stack import FirstvpcStack
+from first_vpc.first_vpc_stack import FirstVpcStack
 
 
 
